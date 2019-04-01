@@ -15,7 +15,8 @@
     "normalize.css": "^8.0.1",
     "vue-router": "^3.0.2",
     "vuex": "^3.1.0",
-    "form-making": "^1.1.17"
+    "form-making": "^1.1.17",
+    "https-proxy-agent": "^2.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
