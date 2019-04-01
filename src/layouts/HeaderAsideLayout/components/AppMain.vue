@@ -13,3 +13,10 @@ export default {
   name: "AppMain"
 };
 </script>
+<style lang="scss" scoped>
+.app-main {
+  padding: 0 30px;
+  height: 100%;
+  box-sizing: border-box;
+}
+</style>

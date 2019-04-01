@@ -5,7 +5,7 @@
         src
         width="40"
       >
-      <span class="site-name">ADMIN</span>
+      <span class="site-name">VUE 生态解决方案</span>
     </div>
     <el-menu
       :show-timeout="200"
