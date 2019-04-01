@@ -14,6 +14,10 @@ const asideMenuConfig = [
       {
         path: '/FormMaking',
         name: 'FormMaking'
+      },
+      {
+        path: '/FormGenerator',
+        name: 'FormGenerator'
       }
     ]
   }

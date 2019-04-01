@@ -1,11 +1,13 @@
 // 以下文件格式是描述路由的协议格式
 // 布局
-import HeaderAsideLayout from './layouts/HeaderAsideLayout'
-import EmptyLayout from './layouts/EmptyLayout'
+const HeaderAsideLayout = () => import(/* webpackChunkName: "HeaderAsideLayout" */ './layouts/HeaderAsideLayout')
+const EmptyLayout = () => import(/* webpackChunkName: "EmptyLayout" */ './layouts/EmptyLayout')
 // 页面
-import FormMaking from './views/FormMaking'
+const FormMaking = () => import(/* webpackChunkName: "FormMaking" */ './views/FormMaking')
+const FormGenerator = () => import(/* webpackChunkName: "FormGenerator" */ './views/FormGenerator')
 // 404
-import NotFound from './views/NotFound'
+const NotFound = () => import(/* webpackChunkName: "NotFound" */ './views/NotFound')
+
 const routeConfig = [
   {
     path: '/',
@@ -18,6 +20,12 @@ const routeConfig = [
         layout: HeaderAsideLayout,
         component: FormMaking,
         name: 'FormMaking'
+      },
+      {
+        path: '/dynamicForm/FormGenerator',
+        layout: HeaderAsideLayout,
+        component: FormGenerator,
+        name: 'FormGenerator'
       }
     ]
   },
