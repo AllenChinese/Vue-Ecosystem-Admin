@@ -52,8 +52,8 @@ export default {
               defaultValue: "男",
               showLabel: false,
               options: [
-                { value: "男", label: "选项1" },
-                { value: "女", label: "选项2" }
+                { value: "男", label: "男" },
+                { value: "女", label: "女" }
               ],
               required: true,
               width: "",
@@ -95,7 +95,7 @@ export default {
             name: "城市",
             icon: "icon-select",
             options: {
-              defaultValue: "新选项",
+              defaultValue: "",
               multiple: false,
               disabled: false,
               clearable: true,
@@ -240,7 +240,12 @@ export default {
         ],
         config: { labelWidth: 100, labelPosition: "left", size: "small" }
       },
-      editData: {},
+      editData: {
+        user_name: "allen",
+        render: "女",
+        date: "2018-11-09",
+        city: "杭州"
+      },
       remoteFuncs: {
         funcGetToken(resolve) {
           // 头像 upload_img
