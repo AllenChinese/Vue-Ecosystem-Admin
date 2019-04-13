@@ -18,7 +18,25 @@
         </div>
       </el-col>
     </el-row>
-
+    <br /><br />
+    <el-row>
+      <el-col :span="12">
+        <div class="grid-content">
+          <div
+            id="punchCard"
+            :style="{width: '680px', height: '380px'}"
+          ></div>
+        </div>
+      </el-col>
+      <el-col :span="12">
+        <div class="grid-content-light">
+          <div
+            id="themeRiver"
+            :style="{width: '680px', height: '380px'}"
+          ></div>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -26,11 +44,15 @@
 import Echarts from 'echarts';
 import stackedAreaOption from './stackedArea';
 import rainFallOption from './rainFall';
+import punchCardOption from './punchCard';
+import themeRiverOption from './themeRiver';
 export default {
   name: 'Echarts',
   mounted() {
     this.drawStackedArea();
     this.drawRainFall();
+    this.drawPunchCard();
+    this.drawThemeRiver();
   },
   methods: {
     drawStackedArea() {
@@ -42,6 +64,16 @@ export default {
     drawRainFall() {
       let rainFall = Echarts.init(document.getElementById('rainFall'));
       rainFall.setOption(rainFallOption);
+    },
+
+    drawPunchCard() {
+      let punchCard = Echarts.init(document.getElementById('punchCard'));
+      punchCard.setOption(punchCardOption);
+    },
+
+    drawThemeRiver() {
+      let themeRiver = Echarts.init(document.getElementById('themeRiver'));
+      themeRiver.setOption(themeRiverOption);
     }
   }
 };
