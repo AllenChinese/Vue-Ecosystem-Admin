@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "core-js": "^2.6.5",
+    "echarts": "^4.2.1",
     "element-ui": "^2.3.6",
     "form-making": "^1.1.17",
     "https-proxy-agent": "^2.2.0",
@@ -31,7 +32,8 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "vue-eslint-parser": "^6.0.2"
+    "vue-eslint-parser": "^6.0.2",
+    "tar": ">=4.4.2"
   },
   "eslintConfig": {
     "root": true,
